@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>{%block title%}{%endblock%}</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,800" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Oleo+Script:400" rel="stylesheet" type="text/css" />
+		<script src="{{ STATIC_URL }}css/5grid/jquery.js"></script>
+       
+		<script src="{{ STATIC_URL }}css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;
+        mobileUI.theme=none&amp;mobileUI_titleBarOverlaid=1&amp;mobileUI_titleBarHeight=60&amp;viewport_is1000px=1060&amp;mobileUI_openerWidth=80"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.3.2.min.js"></script>
+		
+        <noscript>
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/5grid/core.css" />
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/5grid/core-desktop.css" />
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/5grid/core-1200px.css" />
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/5grid/core-noscript.css" />
+			
+            <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" />
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ STATIC_URL }}css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="{{ STATIC_URL }}css/ie7.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+            
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="5grid-layout">
+					<div class="row">
+                   
+                    <!-- TOP -->
+	                                
+                    <table width=100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="left">
+                            
+                            </td>
+                            <td align="right" valign="bottom">
+                              <table width="290" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td height="30" align="right"><a href="login.html">登录</a> / <a href="register.html">注册</a></td>
+                                   <td align="right" valign="bottom"><a href="en/../">中文</a> | <a href="en">English</a></td>
+                                  </tr></table></td></tr>
+                    </table>
+       
+                    <!-- ENDS TOP -->
+                    
+                    <!-- Header -->
+                    <header id="header">
+                    <div class="7u">
+                    <!-- Logo -->
+					<div id="logo"> <img src="{{ STATIC_URL }}img/logo.jpg" alt="LOGO" />
+                    
+                    </div>	
+									
+					<!-- Nav -->
+					<nav id="nav" class="mobileUI-site-nav">
+                        <ul>
+                            <li><a href="/intro">NACSA简介</a></li>
+			                <li><a href="/events">活动列表</a></li> 
+                            <li><a href="/service">留学服务</a></li>
+                            <li><a href="/support">赞助商家</a></li>
+				            <li><a href="/about_us">关于我们</a></li>
+			            </ul>
+			        </nav>
+                    </header>
+				    </div>
+				</div>
+                </div>
+			</div>
+       
+        {%block content%}
+        {%endblock%}
+		
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="5grid-layout">
+					<div class="row">
+						<div class="3u">
+						 <!-- Links -->
+								<section class="widget-links">
+									<h2>热门话题</h2>
+									<ul class="style2">
+										<li><a href="#">加国学习</a></li>
+										<li><a href="#">求职就业</a></li>
+										<li><a href="#">学术联盟</a></li>
+										<li><a href="#">社交活动</a></li>
+										<li><a href="#">渥太华生活</a></li>
+									</ul>
+								</section>
+				
+						</div>
+						<div class="3u">
+						
+							<!-- Links -->
+								<section class="widget-links">
+									<h2>常用链接</h2>
+									<ul class="style2">
+										<li><a href="http://ca.china-embassy.org/chn/">中国驻加大使馆</a></li>
+                                        <li><a href="http://www.uottawa.ca/welcome.html">University of Ottawa</a></li>
+                                        <li><a href="http://www.carleton.ca/">Carleton University</a></li>
+                                        <li><a href="http://www.comefromchina.com/">CFC</a></li>
+									</ul>
+								</section>
+                               
+						</div>
+						<div class="3u">
+						<!-- Financial Support -->
+								<section class="widget-links">
+									<h2>商家赞助</h2>
+									<ul>
+										<li><a href="#" >商家1</a></li>
+										<li><a href="#" >商家 2</a></li>
+										<li><a href="#" >商家 3</a></li>
+										<li><a href="#" >商家 4</a></li>
+									</ul>
+							    </section>
+						</div>
+						<div class="3u">
+						
+							<!-- Contact -->
+								<section class="widget-contact last">
+									<h2>联系我们</h2>
+									
+						            <a href="https://www.facebook.com/groups/435530603201303/" ><img src="{{ STATIC_URL }}img/facebook_32.png"/></a>
+                                    <a href="ca.linkedin.com/in/peiwenchen/" ><img src="{{ STATIC_URL }}img/linkedin_32.png"/></a>
+                                    <a href="http://weibo.com/nacsa"><img src="{{ STATIC_URL }}img/weibo_32.png"/></a>
+                                    <a href="info.nacsa@gmail.com" ><img src="{{ STATIC_URL }}img/email_32.png"/></a>
+                                    <a href=""><img src="{{ STATIC_URL }}img/weixin_32.jpg"/></a>
+                                    <a href="" ><img src="{{ STATIC_URL }}img/qq_32.png"/></a>
+                                <p> 总办公室地址<br />
+									地址第二行<br />
+									</p>
+								</section>
+                                
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+								&copy; 2013 Stan & Page Studio. | Design: <a href="ca.linkedin.com/in/peiwenchen/">Peiwen Chen</a> 
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+	</body>
+</html>

@@ -1,0 +1,55 @@
+{% extends "base.html"%}
+{%block title%}Login{%endblock%}
+{%block content%}
+ {% if form.errors%}
+  <p class="error">Sorry,thats not a valid username or password.</p>
+  {%endif%}
+  
+  <!-- login -->
+			<div id="main-wrapper" >
+				<div class="5grid-layout">
+					<div class="row">
+						<div class="4u">
+						
+							<!-- sidebar -->
+								<div id="sidebar">
+									<section class="widget-thumbnails">
+										<table height="400" width="400" background="{{ STATIC_URL }}img/login_pic.jpg">
+                                        <tr><td align="center">It only takes one minute to join us!
+                                        </td></tr>
+                                        </table>
+									</section>
+								</div>
+						</div>
+						<div class="8u">
+
+							<!-- login content -->
+								<div id="login">
+									<form action="" method="post">
+                                        <table >
+                                    <tr>
+                                        <td align="right">昵称</td>
+                                        <td><input type="text" name="username"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">密码</td>
+                                        <td><input type="password" name="password"/></td>
+                                    </tr>
+                                    <tr>
+                                    <td></td>
+                                      <td>
+                                        <input type="submit" value="login">
+                                        <input type="hidden" name="next" value="{{next|escape}}"/>
+                                    
+                                        </td>
+                                    </tr>
+                                </table>
+                                    </form>
+
+						        </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+  
+  {% endblock %}

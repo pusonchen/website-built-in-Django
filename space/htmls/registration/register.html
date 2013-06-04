@@ -1,0 +1,68 @@
+
+
+{% extends "base.html"%}
+{%block title%}Register{%endblock%}
+{% block content %}
+  <!-- register-->
+
+<div id="main-wrapper" >
+	<div class="5grid-layout">
+		<div class="row">
+		<div class="4u">
+						
+		<!-- sidebar -->
+            <div id="sidebar">
+				<section class="widget-thumbnails">
+				<table height="400" width="400" background="{{ STATIC_URL }}img/login_pic.jpg">
+                <tr><td align="center">It only takes one minute to join us!
+                </td></tr>
+                </table>
+				</section>
+			</div>
+            </div>
+		<div class="8u">
+
+		<!-- login content -->
+			<div id="register" align="center" valign="middle">
+		    <form action="" method="post">
+        
+            <table>
+            <tr>
+            <td align="right">邮箱</td>
+            <td><input type="text" name="email"/></td>
+            </tr>
+            <tr>
+            <td align="right">密码</td>
+            <td><input type="password" name="password"/></td>
+            </tr>
+            <tr>
+            <td align="right">重复密码</td>
+            <td><input type="password" name="confpass"/></td>
+            </tr>
+            <tr>
+            <td align="right">昵称</td>
+            <td><input type="text" name="username"/></td>
+            </tr>
+            <tr>
+            <td align="right" style="padding:0">
+            <input type="checkbox" name='agreement'/></td>
+            <td> 我已经认真阅读并同意NACSA的《<a href="./pages/agreement.html" style="color:blue" target="_blank">服务条款</a>》。
+            </td>
+            </tr>
+            <tr>                                                <td></td>
+            <td>
+            <input type="submit" value="Create the Account"/>
+            </td>
+            </tr>
+        </table>
+        
+        </form>
+        </div>
+         </div>
+        </div>
+    </div>
+</div>
+  
+	
+               
+{% endblock %}

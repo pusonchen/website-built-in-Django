@@ -1,0 +1,18 @@
+/* Social icons for the footer ------------------------------*/
+
+
+
+.email{ background: url(../img/email_32.png); }
+.facebook{ background: url(../img/facebook_32.png); }
+.linkedin{ background: url(../img/linkedin_32.png); }
+.weibo{ background: url(../img/weibo_32.png); }
+.youtube{ background: url(../img/komodo-icons/youtube_16.png); }
+
+
+.icon{
+	display: block;
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-indent: 22px;
+}
+
